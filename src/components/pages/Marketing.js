@@ -1,9 +1,11 @@
 import React from 'react';
+import '../../App.css';
+
 
 export default function Marketing() {
   return (
     <>
-      <h1 className='consulting'>MARKETING</h1>
+      <h1 className='marketing'>MARKETING</h1>
     </>
   )
 }

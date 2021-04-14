@@ -31,7 +31,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo'>
-          EPIC
+          EPIC <i class='fab fa-firstdraft' />
         </Link>
 
         <div className='menu-icon' onClick={handleClick}>
@@ -54,6 +54,12 @@ function Navbar() {
               Services <i class='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
+          </li>
+
+          <li className='nav-item'>
+            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+              Products
+            </Link>
           </li>
 
           <li className='nav-item'>
